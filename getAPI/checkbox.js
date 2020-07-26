@@ -1,71 +1,89 @@
-// JS only 
+// JS only
 // initalize database
 var db = firebase.firestore();
 
 // querySelector variable
 const list_div = document.querySelector("#list_div");
 
-// get API query to return all data in the tasks document
-db.collection("tasks").get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-        list_div.innerHTML += "<div class='list_item'><p>Name: " + doc.data().created_by + "<p>Date: " + doc.data().date + "<p>Title: " + doc.data().title + " <p>Description: " + doc.data().description + " <p>Note: " + doc.data().note + "</p></div>"
+// get API query to return all data in the tasks document and displays tasks
+db.collection("tasks")
+  .get()
+  .then(querySnapshot => {
+    querySnapshot.forEach(doc => {
+      list_div.innerHTML +=
+        "<div class='list_item' data-category='" +
+        doc.data().category +
+        "'><p>Name: " +
+        doc.data().created_by +
+        "<p>Date: " +
+        doc.data().date +
+        "<p>Title: " +
+        doc.data().title +
+        " <p>Description: " +
+        doc.data().description +
+        " <p>Note: " +
+        doc.data().note +
+        " <p>Category: " +
+        doc.data().category +
+        " </p></div>";
     });
-});
+  });
 
 
+// filter function
+function getCheckbox(name) {
+  const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+  const checkGro = document.getElementById("grocery");
+  const checkOth = document.getElementById("other");
+  const list = document.getElementById("list_div");
 
-function checkboxFilter(name){
-	const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
-	
-	// variable to get elements by id
-	const groFilter = document.getElementById("grocery");
-	
-	// query to return all tasks in the grocery shopping category
-	let values = db.collection("tasks").where("category", "==", "grocery shopping")
-    .get()
-    .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            // doc.data() is never undefined for query doc snapshots
-            console.log(doc.id, " => ", doc.data());
-		  });
-    })
-    .catch(function(error) {
-        console.log("Error getting documents: ", error);
+  for (let i in list.children) {
+    let child = list.children[i];
+    if (child.style !== undefined) {
+      child.style.display = "block";
+    }
+    if (
+      checkGro.checked === false &&
+      child.dataset !== undefined &&
+      child.dataset.category === "grocery shopping"
+    ) {
+      child.style.display = "none";
+    }
+    if (
+      checkOth.checked === false &&
+      child.dataset !== undefined &&
+      child.dataset.category === "other"
+    ) {
+      child.style.display = "none";
+    }
+  }
+
+  let values = [];
+
+	// query to return tasks that are in the grocery shopping category
+  const groTask = db
+    .collection("tasks")
+    .where("category", "==", "grocery shopping");
+  groTask.get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
     });
-	
-	checkboxes.forEach((checkbox) => {
-		values.push(checkbox.id);
-	});
-	
-	return values;
-	
-	
-const othFilter = document.getElementById("other");
-	
-	// query to return all tasks under the category other
-	let values2 = db.collection("tasks").where("category", "==", "other")
-    .get()
-    .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-           
-            console.log(doc.id, " => ", doc.data());
-		  });
-    })
-    .catch(function(error) {
-        console.log("Error getting documents: ", error);
+  });
+
+	// querty to return tasks that are in the other category
+  const othTask = db.collection("tasks").where("category", "==", "other");
+  othTask.get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
     });
-	
-	checkboxs.forEach((checkbox) => {
-		values.push(checkbox.id);
-	});
-	
-	return values2;
-	
+  });
+
+  checkboxes.forEach(checkbox => {
+    values.push(checkbox.id);
+  });
+
+  return values;
 }
 
-// button event	
 const btn = document.querySelector("#btn");
-
-btn.addEventListener("click", (event) => {
-	console.log(checkboxFilter("id"));
-})
+btn.addEventListener("click", event => {
+  console.log(getCheckbox("id"));
+});
