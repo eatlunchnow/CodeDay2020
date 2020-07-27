@@ -41,16 +41,22 @@ p {
 
 .card {
   margin-top: 15%;
-  padding: 14px 16px;
+  padding: 14px;
 }
 .card-text, .card-title {
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Noto Sans, sans-serif;
+}
+
+.modal-text {
+  color: black;
+  font-family: Noto Sans, sans-serif;
 }
 .column {
   float: left;
   width: 33.33%;
   padding: 5px;
+  margin-left: 5%;
 }
 
 .row::after {
