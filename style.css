@@ -19,7 +19,6 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 li a:hover {
@@ -31,13 +30,12 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .lead {
   color: black;
 }
-.signup {
+.signup, .vol-signup {
   margin-top: 10%;
   padding: 14px 16px;
 }
