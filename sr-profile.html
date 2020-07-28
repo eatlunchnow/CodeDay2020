@@ -12,46 +12,68 @@
       <ul>
         <li><a class="active" href="./index.html">Home</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./sr-profile.html">Senior Profile</a></li>
+        <!-- need to make it drop down to choose volunteer or senior-->
+        <li><a href="./vol-profile.html">Volunteer Profile</a></li>
         <li style="float: right"><p>A Helping Hand</p></li>
       </ul>
     </div>
     <div class="row">
       <div class="column">
         <div class="card" style="width: 18rem;">
-          <img src="https://icon2.cleanpng.com/20180420/pwe/kisspng-computer-icons-user-profile-symbol-person-vector-5ada64c40a0da6.3569596715242620840412.jpg" class="card-img-top" alt="...">
+          <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/08/portrait-photography-smiling-senior-citizens-ilya-nodia-6.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Senior Name</h5>
+            <h5 class="card-title">Jane Robinson</h5>
             <!-- will have backend code to connect to database for personalization-->
-            <p class="card-text">Name, Location, Bio</p>
-            <a href="#" class="btn btn-primary">Contact</a>
+            <p class="card-text">Strasburg, PA</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Contact</button>
+            <a href="./create-task.html" class="btn btn-primary">Create Task</a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="modal-text">Phone: (267)555-0117</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="column">
         <div class="card text-white bg-info mb-3 task-card" style="max-width: 18rem;">
-          <div class="card-header">Task Name</div>
+          <div class="card-header">Grocery Shopping</div>
           <div class="card-body">
-            <h5 class="card-title">Location, Time</h5>
-            <p class="card-text">Notes about the task regarding specifics or status of task</p>
+            <h5 class="card-title">Strasburg, PA - Early Morning (6am-9am)</h5>
+            <p class="card-text">Need whole milk, butter, dozen eggs, bread rolls</p>
             <button type="submit" class="btn btn-outline-warning">Edit</button>
             <button type="submit" class="btn btn-outline-warning">Delete</button>
           </div>
         </div>
         <div class="card text-white bg-info mb-3 task-card" style="max-width: 18rem;">
-          <div class="card-header">Task Name</div>
+          <div class="card-header">Gardening/Yard Work</div>
           <div class="card-body">
-            <h5 class="card-title">Location, Time</h5>
-            <p class="card-text">Notes about the task regarding specifics or status of task</p>
+            <h5 class="card-title">Strasburg, PA - Noon (12pm-1pm)</h5>
+            <p class="card-text">Need help planting lilies in backyard</p>
             <button type="submit" class="btn btn-outline-warning">Edit</button>
             <button type="submit" class="btn btn-outline-warning">Delete</button>
           </div>
         </div>
         <div class="card text-white bg-info mb-3 task-card" style="max-width: 18rem;">
-          <div class="card-header">Task Name</div>
+          <div class="card-header">Repairs</div>
           <div class="card-body">
-            <h5 class="card-title">Location, Time</h5>
-            <p class="card-text">Notes about the task regarding specifics or status of task</p>
+            <h5 class="card-title">Strasburg, PA - Noon (12pm-1pm)</h5>
+            <p class="card-text">Need lightbulb changed in living room</p>
             <button type="submit" class="btn btn-outline-warning">Edit</button>
             <button type="submit" class="btn btn-outline-warning">Delete</button>
           </div>

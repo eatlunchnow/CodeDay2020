@@ -20,7 +20,6 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 li a:hover {
@@ -32,7 +31,6 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
 }
 .profile-pic {
   margin-top: 10%;
@@ -41,16 +39,22 @@ p {
 
 .card {
   margin-top: 15%;
-  padding: 14px 16px;
+  padding: 14px;
 }
 .card-text, .card-title {
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Noto Sans, sans-serif;
+}
+
+.modal-text {
+  color: black;
+  font-family: Noto Sans, sans-serif;
 }
 .column {
   float: left;
   width: 33.33%;
   padding: 5px;
+  margin-left: 10%;
 }
 
 .row::after {
