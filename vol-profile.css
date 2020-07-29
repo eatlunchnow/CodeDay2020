@@ -25,6 +25,7 @@ li a {
 li a:hover {
   background-color: #C6D4E1;
 }
+
 p {
   display: block;
   color: white;
@@ -41,6 +42,7 @@ p {
   margin-top: 15%;
   padding: 14px;
 }
+
 .card-text, .card-title {
   color: black;
   font-family: Noto Sans, sans-serif;
@@ -50,6 +52,7 @@ p {
   color: black;
   font-family: Noto Sans, sans-serif;
 }
+
 .column {
   float: left;
   width: 33.33%;
