@@ -24,6 +24,7 @@ li a {
 li a:hover {
   background-color: #C6D4E1;
 }
+
 p {
   display: block;
   color: white;
@@ -36,6 +37,7 @@ p {
   padding: 14px 16px;
   font-family: Noto Sans, sans-serif;
 }
+
 .column {
   float: left;
   width: 50%;
