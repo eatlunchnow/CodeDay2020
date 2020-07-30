@@ -26,10 +26,18 @@ li a:hover {
   background-color: #C6D4E1;
 }
 
-p {
+#header {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+p, h3 {
   display: block;
   color: black;
-  text-align: center;
+  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -37,6 +45,7 @@ p {
 .checkboxes{
   font-family: Noto Sans, sans-serif;
   margin-left: 5%;
+  color: black;
 }
 
 .column {
