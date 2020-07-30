@@ -12,9 +12,13 @@
       <li><a class="active" href="./index.html">Home</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#about">About</a></li>
-      <li style="float: right"><p>A Helping Hand</p></li>
+      <li><a href="./vol-profile.html">Volunteer Profile</a></li>
+      <li style="float: right"><p id="header">A Helping Hand</p></li>
     </ul>
-	  
+    <div class="row">
+        <div class="column">
+            <p> </p>
+    <div class="checkboxes">
 	   <div class="filterSection">
       <input
         type="checkbox"
@@ -67,9 +71,8 @@
         value="other"
       />Other/Misc.<br />
     </div>
-
     <button id="btn">Filter</button>
-
+            </div>
     <div class="display" id="list_div">
       <div class="list_item">
         <h3>Tasks</h3>
@@ -79,7 +82,9 @@
     <div class="display_filter" id="list_div_filter" style="display:none">
       <div class="list_item_filter"></div>
     </div>
-
+      </div>
+    </div>
+        
     <!-- The core Firebase JS SDK -->
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
