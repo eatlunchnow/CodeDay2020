@@ -7,7 +7,6 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  margin-bottom: 10%;
 }
 
 li {
@@ -20,29 +19,34 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 li a:hover {
   background-color: #C6D4E1;
 }
+
 p {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
 }
 
-.signup {
+.lead {
+  color: black;
+}
+
+.signup, .vol-signup {
   margin-top: 10%;
   padding: 14px 16px;
 }
+
 .column {
   float: left;
   width: 50%;
   padding: 5px;
+  margin-top: 5%;
 }
 
 .row::after {

@@ -1,0 +1,87 @@
+<!--HTML and JS-->
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="filterSection">
+      <input
+        type="checkbox"
+        name="task"
+        id="grocery"
+        value="grocery shopping"
+      />Grocery Shopping<br />
+
+      <input 
+		type="checkbox" 
+	    name="task" 
+		value="house cleaning"  
+	/>House
+      Cleaning<br />
+
+      <input
+	  type="checkbox" 
+	  name="task" 
+	value="yard work" 
+	/>Gardening/Yard
+      Work<br />
+
+      <input 
+		type="checkbox"
+		name="task" 
+		value="repairs" 
+		/>Repairs<br />
+
+      <input
+        type="checkbox"
+        name="task"
+        value="transportation"
+      />Transportation<br />
+
+      <input type="checkbox" name="task" value="pet help" />Pet Help<br />
+
+      <input
+        type="checkbox"
+        name="task"
+        id="other"
+        value="other"
+      />Other/Misc.<br />
+    </div>
+
+    <button id="btn">Filter</button>
+
+    <div class="display" id="list_div">
+      <div class="list_item">
+        <h3>Tasks</h3>
+      </div>
+    </div>
+
+    <div class="display_filter" id="list_div_filter" style="display:none">
+      <div class="list_item_filter"></div>
+    </div>
+
+    <!-- The core Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script>
+      // Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAVJnV4eZDw2GFoy8HtGDCMJO4_H_1OwGQ",
+        authDomain: "codelabs2020-52ae1.firebaseapp.com",
+        databaseURL: "https://codelabs2020-52ae1.firebaseio.com",
+        projectId: "codelabs2020-52ae1",
+        storageBucket: "codelabs2020-52ae1.appspot.com",
+        messagingSenderId: "139276775839",
+        appId: "1:139276775839:web:3c95fb62510e17f98d8daa",
+        measurementId: "G-YPM5BB0LNK"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="checkbox.js"></script>
+  </body>
+</html>

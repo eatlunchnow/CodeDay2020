@@ -7,7 +7,6 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
-  margin-bottom: 10%;
 }
 
 li {
@@ -34,29 +33,16 @@ p {
   text-decoration: none;
 }
 
-.profile-pic {
-  margin-top: 10%;
+.task-form {
   padding: 14px 16px;
-}
-
-.card {
-  margin-top: 15%;
-  padding: 14px;
-}
-.card-text, .card-title {
-  color: black;
   font-family: Noto Sans, sans-serif;
 }
 
-.modal-text {
-  color: black;
-  font-family: Noto Sans, sans-serif;
-}
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
   padding: 5px;
-  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .row::after {
