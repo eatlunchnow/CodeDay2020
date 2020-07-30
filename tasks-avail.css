@@ -26,7 +26,7 @@ li a:hover {
   background-color: #C6D4E1;
 }
 
-p {
+#header {
   display: block;
   color: white;
   text-align: center;
@@ -34,9 +34,18 @@ p {
   text-decoration: none;
 }
 
+p, h3 {
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .checkboxes{
   font-family: Noto Sans, sans-serif;
   margin-left: 5%;
+  color: black;
 }
 
 .column {
