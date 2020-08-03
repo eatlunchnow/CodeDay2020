@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Code Labs 2020</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="./sr-profile.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./sr-profile.html">Senior Profile</a></li>
+        <li style="float: right"><p>A Helping Hand</p></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card" style="width: 18rem;">
+          <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/08/portrait-photography-smiling-senior-citizens-ilya-nodia-6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jane Robinson</h5>
+            <!-- will have backend code to connect to database for personalization-->
+            <p class="card-text">Strasburg, PA</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Contact</button>
+            <a href="./create-task.html" class="btn btn-primary">Create Task</a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="modal-text">Phone: (267)555-0117</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card text-white bg-info mb-3 task-card" style="max-width: 18rem;">
+          <div class="card-header">Grocery Shopping</div>
+          <div class="card-body">
+            <h5 class="card-title">Strasburg, PA - Early Morning (6am-9am)</h5>
+            <p class="card-text">Need whole milk, butter, dozen eggs, bread rolls</p>
+            <button type="submit" class="btn btn-outline-warning">Edit</button>
+            <button type="submit" class="btn btn-outline-warning">Delete</button>
+          </div>
+        </div>
+        <div class="card text-white bg-info mb-3 task-card" style="max-width: 18rem;">
+          <div class="card-header">Gardening/Yard Work</div>
+          <div class="card-body">
+            <h5 class="card-title">Strasburg, PA - Noon (12pm-1pm)</h5>
+            <p class="card-text">Need help planting lilies in backyard</p>
+            <button type="submit" class="btn btn-outline-warning">Edit</button>
+            <button type="submit" class="btn btn-outline-warning">Delete</button>
+          </div>
+        </div>
+        <div class="card text-white bg-info mb-3 task-card" style="max-width: 18rem;">
+          <div class="card-header">Repairs</div>
+          <div class="card-body">
+            <h5 class="card-title">Strasburg, PA - Noon (12pm-1pm)</h5>
+            <p class="card-text">Need lightbulb changed in living room</p>
+            <button type="submit" class="btn btn-outline-warning">Edit</button>
+            <button type="submit" class="btn btn-outline-warning">Delete</button>
+          </div>
+        </div>
+        <div class="card text-white bg-info mb-3 task-card" style="max-width: 18rem;">
+          <div class="card-header">Task Name</div>
+          <div class="card-body">
+            <h5 class="card-title">Location, Time</h5>
+            <p class="card-text">Notes about the task regarding specifics or status of task</p>
+            <button type="submit" class="btn btn-outline-warning">Edit</button>
+            <button type="submit" class="btn btn-outline-warning">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
