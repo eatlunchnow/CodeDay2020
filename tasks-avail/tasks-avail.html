@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Code Labs 2020</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="./tasks-avail.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="./index.html">Home</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="./vol-profile.html">Volunteer Profile</a></li>
+      <li style="float: right"><p id="header">A Helping Hand</p></li>
+    </ul>
+    <div class="row">
+        <div class="column">
+            <p> </p>
+    <div class="checkboxes">
+	   <div class="filterSection">
+      <input
+        type="checkbox"
+        name="task"
+        id="grocery"
+        value="grocery shopping"
+      />Grocery Shopping<br />
+
+      <input 
+		type="checkbox" 
+	    name="task" 
+		id="house cleaning"	 
+		value="house cleaning"  
+	/>House
+      Cleaning<br />
+
+      <input
+	  type="checkbox" 
+	  name="task" 
+	  id="yard work"
+	  value="yard work" 
+	/>Gardening/Yard
+      Work<br />
+
+      <input 
+		type="checkbox"
+		name="task"
+	    id="repairs"		 
+		value="repairs" 
+		/>Repairs<br />
+
+      <input
+        type="checkbox"
+        name="task"
+	    id="transportation"		 
+        value="transportation"
+      />Transportation<br />
+
+      <input 
+	    type="checkbox" 
+		name="task" 
+		id="pet help"	 
+		value="pet help" 
+		/>Pet Help<br />
+
+      <input
+        type="checkbox"
+        name="task"
+        id="other"
+        value="other"
+      />Other/Misc.<br />
+    </div>
+    <button id="btn">Filter</button>
+    </div>
+    <div class="display" id="list_div">
+      <div class="list_item">
+        <h3>Tasks</h3>
+      </div>
+    </div>
+
+    <div class="display_filter" id="list_div_filter" style="display:none">
+      <div class="list_item_filter"></div>
+    </div>
+      </div>
+      </div>
+        
+    <!-- The core Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script>
+      // Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAVJnV4eZDw2GFoy8HtGDCMJO4_H_1OwGQ",
+        authDomain: "codelabs2020-52ae1.firebaseapp.com",
+        databaseURL: "https://codelabs2020-52ae1.firebaseio.com",
+        projectId: "codelabs2020-52ae1",
+        storageBucket: "codelabs2020-52ae1.appspot.com",
+        messagingSenderId: "139276775839",
+        appId: "1:139276775839:web:3c95fb62510e17f98d8daa",
+        measurementId: "G-YPM5BB0LNK"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="tasks-avail.js"></script>
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
