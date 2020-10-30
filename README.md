@@ -1,1 +1,1 @@
-# CodeLabs 2020
+# CodeDay 2020 Internship
